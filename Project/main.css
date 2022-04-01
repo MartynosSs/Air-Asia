@@ -347,7 +347,7 @@ html {
     text-align: center;
 }
 
-.pager__item--active .pager__link {
+.pager__link:hover {
     background: #fff;
     color: #F5170E;
 }
@@ -771,9 +771,14 @@ html {
     border-radius: 4px;
     border: none;
     background: #fff;
+    outline: none;
     padding: 22px 30px;
     font-size: 18px;
     color: #1A1B1E;
+}
+
+.form__input:focus {
+    border: 1px solid #F5170E;
 }
 
 .form__controls {
@@ -944,4 +949,14 @@ html {
 
 .dropdown__item--bold {
     font-weight: bold;
+}
+
+.square {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #EDEDED;
+    margin-top: -15px;
+    transform: rotate(48deg);
+    margin-left: 89px;
 }
